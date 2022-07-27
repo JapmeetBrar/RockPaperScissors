@@ -67,12 +67,18 @@ function playGame(playerSelection, computerSelection){
     updateScore();
     if (playerWins ==5 && computerWins ==5){
         score.textContent="The game is over and it was a TIE!";
+        playerWins = 0;
+        computerWins = 0;
     }else if (playerWins >=5){
         
         score.textContent="The game is over and the winner was YOU!";
+        playerWins = 0;
+        computerWins = 0;
     }else if (computerWins>=5){
         
         score.textContent="The game is over and the winner was THE COMPUTER";
+        playerWins = 0;
+        computerWins = 0;
     }
 }
 
